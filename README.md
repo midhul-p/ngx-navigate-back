@@ -1,27 +1,51 @@
 # ngx-navigate-back
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+ngx-navigate-back is a lightweight Angular library designed to simplify navigation management within Angular applications. With ngx-navigate-back, you can easily implement a "back" functionality similar to the browser's native back button, allowing users to navigate to the previous page within your Angular application.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Simple Integration**: Easy to integrate into your Angular application.
+- **Record Navigation History**: Record the navigation history to enable smooth backward navigation.
+- **Retrieve Navigation History**: Get the navigation history as an array.
+- **Navigate Back**: Go back to the previous page with a simple function call.
 
-## Code scaffolding
+## Functions
+- recordUrlHistory(): Begins recording the navigation history.
+- getHistory(): Retrieves the navigation history as an array.
+- navigateBack(): Navigates back to the previous page.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
- 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install ngx-navigate-back via npm:
 
-## Running unit tests
+```bash
+npm install ngx-navigate-back
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+1. Import `NgxNavigateBackService` in your Angular component:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```typescript
+import { NgxNavigateBackService } from 'ngx-navigate-back';
+```
 
-## Further help
+2. Inject `NgxNavigateBackService` into your component:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```typescript
+constructor(public navigation: NgxNavigateBackService) {
+  this.navigation.recordUrlHistory();
+}
+```
+
+3. Use the `navigateBack()` function to implement the "back" functionality:
+
+```html
+<button (click)="navigation.navigateBack()">Back to Previous Page</button>
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
