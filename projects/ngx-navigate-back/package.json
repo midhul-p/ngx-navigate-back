@@ -1,6 +1,22 @@
 {
   "name": "ngx-navigate-back",
   "version": "1.0.0",
+  "author": {
+    "name": "Midhul P",
+    "url": "https://developwithmi.com/"
+  },
+  "keywords": [
+    "angular",
+    "ngx-navigate-back",
+    "angular navigate back",
+    "angular-back-button",
+    "ng-back-button"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/developwithmi/ngx-navigate-back.git"
+  },
+  "description": "ngx-navigate-back is a lightweight Angular library designed to simplify navigation management within Angular applications. With ngx-navigate-back, you can easily implement a 'back' functionality similar to the browser's native back button, allowing users to navigate to the previous page within your Angular application.",
   "peerDependencies": {
     "@angular/common": "^17.2.0",
     "@angular/core": "^17.2.0"
