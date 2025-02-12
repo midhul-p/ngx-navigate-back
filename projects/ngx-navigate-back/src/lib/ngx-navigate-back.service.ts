@@ -25,12 +25,18 @@ export class NgxNavigateBackService {
 
   public navigateBack(): void {
     this.history.pop();
- 
     if (this.history.length > 0) {
       this.location.back()
     } else {
       this.router.navigateByUrl("/")
     }
+  }
+
+  public getLastUrl(): string {
+    if (this.history.length > 0) {
+        return this.history[this.history.length - 2];
+    }
+    return '';
   }
 
 }
