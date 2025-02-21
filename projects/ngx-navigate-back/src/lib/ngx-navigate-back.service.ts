@@ -30,6 +30,7 @@ export class NgxNavigateBackService {
     } else {
       this.router.navigateByUrl("/")
     }
+    this.history.pop();
   }
 
   public getLastUrl(): string {
