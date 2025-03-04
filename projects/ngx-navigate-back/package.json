@@ -1,6 +1,6 @@
 {
   "name": "ngx-navigate-back",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": {
     "name": "Midhul P",
     "url": "https://developwithmi.com/"
@@ -22,8 +22,8 @@
     "url": "https://github.com/developwithmi/ngx-navigate-back/issues"
   },
    "peerDependencies": {
-    "@angular/common": "^17.2.0",
-    "@angular/core": "^17.2.0"
+    "@angular/common": ">=17.2.0",
+    "@angular/core": ">=17.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
